@@ -1,0 +1,431 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Oswald&family=Roboto+Slab:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Cusom Styles*/
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 32px;
+
+}
+.padding {
+    padding: 50px 0;
+}
+.header{
+    background-color:rgb(75, 196, 240) ;
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    /*z-index: 9990;*/
+}
+.brand {
+    
+    float:left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 30px;
+    color: rgb(44, 39, 39);
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+
+}
+/*.navbar1{
+    float: right;
+    padding-top: 25px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    color: rgb(24, 24, 24); 
+
+}*/
+.navbar1{
+    float: right;
+  
+}
+.brand, .navbar1{
+    display: flex;
+    
+}
+.navbar1 a {
+ 
+    display: flex;
+    margin-left: 25px;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    
+}
+.navbar1 a:hover{
+    color: chocolate;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero{
+    background-color: rgb(75, 196, 240) ;
+    align-items: center;
+    padding: 12rem 0;
+    background-size: cover;
+}
+
+
+.heroimg img{
+   height: 600px;
+   width:950px;
+   align-items: center;
+   z-index: 1;
+   margin-top: -250px;
+   margin-left: 320px;
+   padding: 10px;
+}
+.main-btn{
+    padding: 10px 20px;
+    position: absolute;
+    font-size: medium;
+    border: none;
+    
+    background-color:white;
+    align-items: center;
+    margin-left: 700px;
+    margin-top: 20px;
+}
+.main-btn:hover{
+    background-color: rgb(247, 88, 30);
+}
+strong{
+    font-size: 58px;
+
+    font-weight: bold;
+    padding: 30px 0;
+    align-items:start;
+    color: white;
+    margin-left: 140px;
+    
+}
+.documents{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.file{
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+
+}
+.file img{
+    width: 50px;
+    height: 30px;
+}
+hr{
+    height: 2px;
+
+}
+.statistics{
+    display: flex;
+    padding: 20px;
+}
+.monitor{
+    width: 90%;
+
+}
+.monitor h2{
+    font-size: 55px;
+    font-weight: bold;
+    padding: 10px;
+}
+.monitor p{
+    font-size: 20px;
+    padding: 20px;
+    color: grey;
+}
+.graph img{
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+}
+.Learn-more{
+    padding: 15px 30px;
+    color: white;
+    background-color: rgb(75, 196, 240);
+    border: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.table{
+  margin-left: 200px;
+  padding: 10px;
+}
+.table h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: rgb(57, 57, 115);
+    margin-right: 100px;
+}
+.table th{
+    text-align: center;
+    background-color: rgb(74, 209, 209);
+    color: white;
+    padding: 10px 50px ;
+    font-size: 25px;
+}
+.table td{
+    border: 1px solid grey;
+    padding: 15px 95px ;
+    text-align: left;
+    font-size: 18px;
+}
+.table tr:nth-child(odd) td{
+background-color: rgb(147, 223, 244);
+}
+
+.pricing h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(57, 57, 115);
+    padding: 20px 5px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.pricing h2{
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+    padding: 4px;
+  
+}
+.button{
+    margin-left: 720px;
+    font-size: 1.25rem;
+    background-color: #3ab1ed;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 2rem;
+    width: 4.5rem;
+    border-radius: 1rem;
+    /*animation:backgroundYellow 1s infinite;*/
+    cursor: pointer;
+}
+.row{
+    padding: 0px 5px;
+    pointer-events: none;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: rgb(91, 91, 39);
+    /*animation: moveCircleRight 1s infinite ;*/
+    pointer-events: none;
+
+}
+
+.price-comparision{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 10px;
+}
+.price-comparision h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+}
+.price-comparision p{
+    font-size: 17px;
+    color: gray;
+    padding: 10px 0px;
+}
+.price-column{
+box-shadow: 0 7px 30px grey;
+border-radius: 20px;
+justify-content: space-between;
+margin: 10px;
+padding: 20px;
+flex-grow: 1;
+flex-basis: 0;
+max-width:300px;
+}
+.price-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.price{
+    display: flex;
+    font-size: 40px;
+    color: #3ab1ed;
+}
+.doller{
+font-size: 1.5rem;
+margin-top: .5rem;
+margin-right: .25rem;
+color: #3ab1ed;
+}
+.month{ 
+    font-size: .75rem;
+    align-self: flex-end;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+}
+.divider{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(74, 72, 72);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.feature{
+    font-size: 19px;
+    margin: 5px;
+}
+.cross{
+    color: rgb(152, 150, 150);
+}
+.feature img{
+    padding-left: 10px;
+    margin-right: 15px;
+
+}
+.price-button{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+.price-button:hover{
+    color: white;
+    background-color: #3ab1ed;
+    border: none;
+    
+}
+.trial{
+    margin: 50px;
+    padding: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #3ab1ed;
+    color: white;
+    font-size: 37px;
+    border-radius: 20px;
+}
+.trial-button{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0px;
+}
+.address{
+    align-items: stretch;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+.trackl-column{
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0 20px;
+}
+.trackl-column h3{
+font-size: 30px;
+font-weight: bold;
+color: rgb(57, 57, 115) ;
+padding: 10px 0px;
+}
+.trackl-column p{
+    padding: 10px 0;
+    font-size: 20px;
+}
+.track-img{
+    display: flex;
+    padding: 5px;
+    margin: 5px 10px;
+    
+}
+.track-img img{
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    border: .5px solid #3ab1ed;
+    margin: 0 10px;
+}
